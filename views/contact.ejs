@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Study Planner – Contact</title>
+  <link rel="stylesheet" href="/Css/style.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand">Smart Study Planner</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/planner">Planner</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+  <div id="auth-modal-bg" class="auth-modal-bg" style="display:none">
+    <div id="login-modal" class="auth-modal auth-modal-animate">
+      <button class="close-auth-modal">×</button>
+      <h2>Login</h2>
+      <form>
+        <label>Email<br><input type="email" required></label><br>
+        <label>Password<br><input type="password" required></label><br>
+        <button type="submit">Login</button>
+      </form>
+      <p class="auth-switch">Don't have an account? <a href="#" class="show-signup-link">Create Account</a></p>
+    </div>
+    <div id="signup-modal" class="auth-modal auth-modal-animate">
+      <button class="close-auth-modal">×</button>
+      <h2>Create Account</h2>
+      <form>
+        <label>Email<br><input type="email" required></label><br>
+        <label>Password<br><input type="password" required></label><br>
+        <button type="submit">Create Account</button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="#" class="show-login-link">Login</a></p>
+    </div>
+  </div>
+  <main class="static-page-container">
+    <h1>Contact Us</h1>
+    <p>We appreciate your feedback and questions. While we don't have a backend for submitting messages, you can reach
+      us via email:</p>
+    <ul>
+      <li>Email: <a href="mailto:smartstudyplanner@example.com">smartstudyplanner@example.com</a></li>
+    </ul>
+    <h2>Feedback Form (for demo only)</h2>
+    <form class="contact-form"
+      onsubmit="alert('Thank you for your feedback! (Form not actually submitted)'); return false;">
+      <label>Name:</label>
+      <input type="text" placeholder="Your name" />
+      <label>Email:</label>
+      <input type="email" placeholder="Your email" />
+      <label>Message:</label>
+      <textarea placeholder="Your message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+  <!-- <script src="auth.js"></script> -->
+  <script src="/Script/script.js"></script>
+</body>
+
+</html>

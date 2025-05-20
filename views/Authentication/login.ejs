@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+</head>
+
+<body class="min-vh-100 d-flex align-items-center justify-content-center bg-light">
+  <div class="bg-white p-4 p-md-5 rounded-4 shadow w-100" style="max-width: 420px; margin: auto;">
+    <h2 class="h4 fw-bold mb-4 text-center text-dark">Login to Your Account</h2>
+
+    <form class="needs-validation" action="/login" method="post" novalidate>
+      <div class="mb-3">
+        <label for="email" class="form-label text-muted fw-medium">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required />
+        <div class="invalid-feedback">Please provide a valid email.</div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label text-muted fw-medium">Password</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required />
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="rememberMe" />
+          <label class="form-check-label text-muted small" for="rememberMe">Remember me</label>
+        </div>
+        <a href="#" class="text-primary small text-decoration-none">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="btn btn-primary w-100">Log In</button>
+    </form>
+
+    <p class="mt-4 text-center small text-muted">
+      Don’t have an account?
+      <a href="/signup" class="text-primary text-decoration-none">Sign up</a>
+    </p>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"></script>
+
+  <!-- Custom Script -->
+  <script src="/Script/script.js"></script>
+</body>
+
+</html>
